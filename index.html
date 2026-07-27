@@ -603,32 +603,36 @@
     名前の読み方・フォント・納期など、なんでもどうぞ。
   </p>
 
-  <form class="contact-form" onsubmit="return false;">
+  <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="contact" />
+    <p hidden>
+      <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+    </p>
     <div class="form-row">
       <div>
         <label>お名前</label>
-        <input type="text" placeholder="山田 花子" />
+        <input type="text" name="name" placeholder="山田 花子" required />
       </div>
       <div>
         <label>メールアドレス</label>
-        <input type="email" placeholder="example@mail.com" />
+        <input type="email" name="email" placeholder="example@mail.com" required />
       </div>
     </div>
     <div>
       <label>お問い合わせの種類</label>
-      <select>
+      <select name="category" required>
         <option value="" disabled selected>選択してください</option>
-        <option>出産祝いのオーダー</option>
-        <option>お宮参り・百日祝いのオーダー</option>
-        <option>誕生日ギフトのオーダー</option>
-        <option>フォント・デザインについて</option>
-        <option>納期について</option>
-        <option>その他</option>
+        <option value="出産祝いのオーダー">出産祝いのオーダー</option>
+        <option value="お宮参り・百日祝いのオーダー">お宮参り・百日祝いのオーダー</option>
+        <option value="誕生日ギフトのオーダー">誕生日ギフトのオーダー</option>
+        <option value="フォント・デザインについて">フォント・デザインについて</option>
+        <option value="納期について">納期について</option>
+        <option value="その他">その他</option>
       </select>
     </div>
     <div>
       <label>メッセージ</label>
-      <textarea placeholder="ご希望のお名前・デザインイメージ・ご質問などをご記入ください"></textarea>
+      <textarea name="message" placeholder="ご希望のお名前・デザインイメージ・ご質問などをご記入ください" required></textarea>
     </div>
     <button type="submit" class="btn btn-primary">送信する</button>
   </form>
