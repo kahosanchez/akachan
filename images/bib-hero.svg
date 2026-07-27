@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="名入れスタイの写真（プレースホルダー）">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#fffaf6"/>
+      <stop offset="100%" stop-color="#f6efe9"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g)"/>
+  <g transform="translate(300,180)">
+    <rect x="0" y="0" width="600" height="420" rx="32" ry="32" fill="#fff" stroke="#e8ddd5" stroke-width="2"/>
+    <g transform="translate(60,40)">
+      <ellipse cx="210" cy="120" rx="160" ry="100" fill="#f2d9d0"/>
+      <rect x="120" y="80" width="180" height="120" rx="60" ry="60" fill="#fff"/>
+      <text x="210" y="320" font-family="Cormorant Garamond, serif" font-size="48" fill="#c9897a" text-anchor="middle">名入れ写真</text>
+    </g>
+  </g>
+  <text x="600" y="820" font-family="Noto Serif JP, serif" font-size="18" fill="#8a7570" text-anchor="middle">プレースホルダー画像です。実際の写真は images/bib-hero.jpg を置いてください。</text>
+</svg>
